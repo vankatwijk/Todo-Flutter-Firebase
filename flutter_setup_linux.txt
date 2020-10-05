@@ -1,0 +1,10 @@
+you need to install android studio first and have android sdk  / 10+ api level 29 and greater
+
+//its better to download the .tar file and not the snap so you are able to point to the path correctly
+sudo snap install flutter --classic
+
+flutter doctor
+//if you see a license problem after the running doctor run :
+flutter doctor --android-licenses
+if you see a java error then you have the wrong sdk / api level nstalled, check android studio
+
