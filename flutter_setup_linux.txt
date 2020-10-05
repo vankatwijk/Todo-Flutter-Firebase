@@ -8,3 +8,6 @@ flutter doctor
 flutter doctor --android-licenses
 if you see a java error then you have the wrong sdk / api level nstalled, check android studio
 
+ // useful commands
+flutter create 'PATH_TO_YOUR_APP_FOLDER'
+flutter run 
