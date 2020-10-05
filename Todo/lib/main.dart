@@ -54,6 +54,7 @@ class _MyAppState extends State<MyApp> {
                     setState((){
                       todos.add(input);
                     });
+                    Navigator.of(context).pop(); // closes the dialog
                   },child:Text("Add"))
                 ]
               );
