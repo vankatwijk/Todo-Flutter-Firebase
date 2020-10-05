@@ -44,6 +44,8 @@ class _MyAppState extends State<MyApp> {
             context: context,
             builder: (BuildContext context){
               return AlertDialog(
+                  shape:RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16)),
                   title: Text("Add TodoList"),
                   content: TextField(onChanged: (String value){
                     input = value;
