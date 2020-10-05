@@ -74,6 +74,8 @@ class _MyAppState extends State<MyApp> {
             child:Card(
               child: ListTile(
                 title:Text(todos[index]),
+                trailing: IconButton(icon: Icon(Icons.delete, color:Colors.red),
+                onPressed:(){}),
               ),
             ));
         }),
