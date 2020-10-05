@@ -19,6 +19,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List todos = List();
+  String input = "";
 
   @override
   void initState() { 
@@ -34,7 +35,28 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("myTodos")
+        title:Text("myTodos"),
+        backgroundColor: Colors.red
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed:(){
+          showDialog(
+            context: context,
+            builder: (BuildContext context){
+              return AlertDialog(
+                title: Text("Add TodoList"),
+                content: TextField(onChanged: (String value){
+                  input = value;
+                },)
+              );
+            });
+
+        }, 
+        child:Icon(
+          Icons.add,
+          color: Colors.white,
+        )
+
       ),
       body: ListView.builder(
         itemCount: todos.length,
