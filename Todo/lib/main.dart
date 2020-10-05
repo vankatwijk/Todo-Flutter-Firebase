@@ -44,10 +44,18 @@ class _MyAppState extends State<MyApp> {
             context: context,
             builder: (BuildContext context){
               return AlertDialog(
-                title: Text("Add TodoList"),
-                content: TextField(onChanged: (String value){
-                  input = value;
-                },)
+                  title: Text("Add TodoList"),
+                  content: TextField(onChanged: (String value){
+                    input = value;
+                  },
+                ),
+                actions: <Widget>[
+                  FlatButton(onPressed: (){
+                    setState((){
+                      todos.add(input);
+                    });
+                  },child:Text("Add"))
+                ]
               );
             });
 
