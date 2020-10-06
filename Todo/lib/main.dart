@@ -46,18 +46,6 @@ class _MyAppState extends State<MyApp> {
 
   }
 
-
-
-  // @override
-  // void initState() { 
-  //   super.initState();
-  //   todos.add("Item1");
-  //   todos.add("Item2");
-  //   todos.add("Item3");
-  //   todos.add("Item4");
-    
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,27 +85,6 @@ class _MyAppState extends State<MyApp> {
         )
 
       ),
-      // body: ListView.builder(
-      //   itemCount: todos.length,
-      //   itemBuilder: (BuildContext context, int index){
-      //     return Dismissible(
-      //       key:Key(todos[index]), 
-      //       child:Card(
-      //         elevation: 4,
-      //         margin: EdgeInsets.all(8),
-      //         shape:RoundedRectangleBorder(
-      //           borderRadius: BorderRadius.circular(16)),
-      //         child: ListTile(
-      //           title:Text(todos[index]),
-      //           trailing: IconButton(icon: Icon(Icons.delete, color:Colors.red),
-      //           onPressed:(){
-      //             setState(() {
-      //               todos.removeAt(index);
-      //             });
-      //           }),
-      //         ),
-      //       ));
-      //   }),
       body: StreamBuilder(stream:FirebaseFirestore.instance.collection("MyTodos").snapshots(),builder: (context,snapshots){
         return ListView.builder(
         shrinkWrap:true,
