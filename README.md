@@ -1,8 +1,3 @@
-flutter app
-
-based on :
-https://www.youtube.com/watch?v=KfhBsahIk7w&ab_channel=AbdulAzizAhwan
-
 # Project Title
 
 Flutter Firebase Todo app
