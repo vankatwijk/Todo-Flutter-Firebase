@@ -17,6 +17,13 @@ Create Todo
 Remove Todo
 ```
 
+## Sreenshots
+| home  | add todo |
+| -------------- | ------------- |
+| <img src="https://github.com/vankatwijk/Todo-Flutter-Firebase/blob/main/docs/Screenshot_2020-10-06-14-05-00-746_com.example.Todo.jpg"> | <img src="https://github.com/vankatwijk/Todo-Flutter-Firebase/blob/main/docs/Screenshot_2020-10-06-14-05-22-052_com.example.Todo.jpg"> |
+
+
+
 ## Getting Started
 
 The instructions below will help you setup the copy of the flutter app on your development machine.
