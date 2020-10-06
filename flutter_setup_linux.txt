@@ -11,3 +11,6 @@ if you see a java error then you have the wrong sdk / api level nstalled, check 
  // useful commands
 flutter create 'PATH_TO_YOUR_APP_FOLDER'
 flutter run 
+
+//similar to npm install
+flutter pub get

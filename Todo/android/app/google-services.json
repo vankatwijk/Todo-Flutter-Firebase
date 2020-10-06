@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "991516657392",
+    "firebase_url": "https://ninja-cloud-functions-4f863.firebaseio.com",
+    "project_id": "ninja-cloud-functions-4f863",
+    "storage_bucket": "ninja-cloud-functions-4f863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991516657392:android:09cf2ee62f7d7f665d2435",
+        "android_client_info": {
+          "package_name": "com.example.Todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991516657392-4fvndlts3ak87su5apbr5tbr656acf8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkfMpDXrEe9A5TftzwY0BAcJpDb_notiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991516657392-4fvndlts3ak87su5apbr5tbr656acf8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
