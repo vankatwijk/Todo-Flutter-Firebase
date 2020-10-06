@@ -23,7 +23,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List todos = List();
   String input = "";
 
   createTodos(){
@@ -38,7 +37,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  deleteTodos(){
+  deleteTodos(item){
+    DocumentReference documentReference = FirebaseFirestore.instance.collection("MyTodos").doc(item);
+
+    documentReference.delete().whenComplete((){
+      print("$item deleted");
+    });
 
   }
 
@@ -132,7 +136,7 @@ class _MyAppState extends State<MyApp> {
                 trailing: IconButton(icon: Icon(Icons.delete, color:Colors.red),
                 onPressed:(){
                   setState(() {
-                    todos.removeAt(index);
+                    deleteTodos(documentSnapshot["todoTitle"]);
                   });
                 }),
               ),
