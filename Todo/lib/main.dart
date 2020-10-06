@@ -125,6 +125,9 @@ class _MyAppState extends State<MyApp> {
         itemBuilder: (context,index){
           DocumentSnapshot documentSnapshot = snapshots.data.documents[index];
           return Dismissible(
+            onDismissed: (direction){
+                    deleteTodos(documentSnapshot["todoTitle"]);
+            },
             key:Key(index.toString()), 
             child:Card(
               elevation: 4,
