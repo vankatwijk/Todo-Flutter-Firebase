@@ -128,7 +128,7 @@ class _MyAppState extends State<MyApp> {
             onDismissed: (direction){
                     deleteTodos(documentSnapshot["todoTitle"]);
             },
-            key:Key(index.toString()), 
+            key:Key(documentSnapshot["todoTitle"]), 
             child:Card(
               elevation: 4,
               margin: EdgeInsets.all(8),
